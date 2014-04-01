@@ -48,7 +48,7 @@ class SlideoTracker:
     def __init__(self, videopath, slidepaths, frame_rate=25, debug=False):
         self.frame_rate = frame_rate
         self.videopath = videopath
-        self.slidepaths = slidepaths
+        self.slidepaths = dict(enumerate(slidepaths))
         print '#Compute slides features ...'
         self.slidefeats = dict([(id, self._image_feats_by_file(path))
                                 for id, path in self.slidepaths.items()])
