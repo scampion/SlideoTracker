@@ -19,7 +19,7 @@ from __future__ import division
 import numpy as np
 import math
 import os
-from scikits.learn import neighbors as knn
+from sklearn import neighbors as knn
 import cv
 import operator
 import time
